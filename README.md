@@ -1,34 +1,48 @@
-Ce projet est une application XR data-driven développée avec Unity 2022.3 LTS, simulant un parking intelligent dans un environnement 3D immersif, sans utilisation de casque VR.
+3D PARKING
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Description du système simulé
 
-Chaque place de parking représente une donnée avec un état dynamique (Libre, Réservée, Occupée), visualisé en temps réel par un feedback visuel clair.
-L’objectif est de permettre à l’utilisateur de visualiser l’état du système, interagir avec les données et observer les conséquences de ses décisions, comme dans un système réel de supervision (Smart City, IoT, Digital Twin).
+Ce projet est une application XR data-driven développée avec Unity 2022.3 LTS.
+Il simule un parking intelligent où chaque place représente une donnée avec un état spécifique.
+L’objectif est de visualiser l’état du système, d’interagir avec les éléments et de comprendre la logique globale à travers un environnement 3D immersif.
 
-Mode XR: VR simulée -Interaction via souris-Aucun matériel XR requis
+Les données sont simulées et pilotent directement le comportement et l’apparence des objets (changement de couleur, événements visuels).
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Mode XR choisi
 
+Option 1 – VR simulée
 
-Fonctionnalités principales:
+Interaction via souris
 
-Visualisation data-driven des places de parking
+Aucun casque VR requis
 
-États dynamiques avec code couleur (vert / orange / rouge)
+Environnement 3D interactif simulant une expérience XR
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Fonctionnalités implémentées
 
-Interaction utilisateur par sélection de véhicules
+Visualisation des états des places de parking (Libre / Réservée / Occupée)
 
-Interface utilisateur avec boutons et messages de feedback
+Code couleur dynamique :
 
-Application de règles métier simples (validation, refus, conséquence)
+Vert : Libre
 
-Effets visuels lors des événements critiques
+Orange : Réservée
 
+Rouge : Occupée
 
-Architecture logicielle:
+Sélection des véhicules par clic
 
-Le projet suit une architecture modulaire de type Manager :
+Interface utilisateur avec boutons de sélection
 
-ParkingManager : gestion centrale des données du système
+Messages textuels de feedback (succès / erreur)
 
-ParkingSpot : représentation des données et des états
+Application de règles métier simples
 
-CarController : logique de déplacement et d’actions
+Effets visuels lors d’événements spécifiques
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Compte rendu
 
-UIManager : gestion de l’interface utilisateur et du feedback
+Ce projet démontre l’utilisation de la XR pour la supervision et la prise de décision dans un système data-driven.
+L’utilisateur interagit avec des données représentées par des objets 3D, observe les conséquences de ses choix et comprend les règles du système.
+
+L’architecture est modulaire et repose sur des scripts de type Manager, assurant un code clair, structuré et maintenable.
+L’application répond aux objectifs pédagogiques du module en mettant l’accent sur la représentation, l’interaction et la compréhension plutôt que sur la complexité technique.
